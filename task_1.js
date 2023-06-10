@@ -3,7 +3,7 @@ const toyota = {
     manufacturerСountry: "japan"
 }
 
-const carina = Object.getPrototypeOf(toyota);
+const carina = Object.create(toyota);
 carina.color = "red";
 
 showProperty(carina);
